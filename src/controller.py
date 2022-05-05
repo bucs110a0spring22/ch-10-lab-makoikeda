@@ -15,6 +15,7 @@ class Controller:
         self.background.fill((250, 250, 250))  # set the background to white
         pygame.font.init()  # you have to call this at the start, if you want to use this module.
         pygame.key.set_repeat(1, 50)  # initialize a held keey to act as repeated key strikes
+        self.mouse_enabled = False
         """Load the sprites that we need"""
 
         self.enemies = pygame.sprite.Group()
@@ -48,6 +49,21 @@ class Controller:
                         self.hero.move_left()
                     elif(event.key == pygame.K_RIGHT):
                         self.hero.move_right()
+  
+          
+                    
+        #Here,the feature which allows the user to move the hero with the mouse is added
+                      
+                if event.type == pygame.MOUSEMOTION:
+                    if self.mouse_enabled or self.hero.rect.collidepoint(event.pos):
+                      self.hero.rect.move_ip(event.rel)
+                      self.mouse_enabled = True
+                
+
+                
+
+
+                
 
             # check for collisions
             fights = pygame.sprite.spritecollide(self.hero, self.enemies, True)
