@@ -8,20 +8,21 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+Using pygame, I added an update funciton for enermy's movement so that the enermy moves randomly around the screen and an additional feature so that a user can move the hero object using the mouse as well as the keyboard. 
+ 
 #### Unique Feature
- < Describe the unique feature you added >
+ I added a feature which allows a user to move the hero using the mouse.
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 3
 
-Grace days remaining: < # >/5
+Grace days remaining: 0/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+N/A
 
 ## REFERENCES:
- < List any outside resources used >
+N/A
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+N/A
